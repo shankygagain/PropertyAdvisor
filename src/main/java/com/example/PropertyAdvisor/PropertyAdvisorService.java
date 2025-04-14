@@ -9,10 +9,10 @@ import java.util.List;
 public class PropertyAdvisorService {
 
 @Autowired
-private PropertyAdvisorRepo propertyAdvisorRepo;
+private PropertyAdvisorRepo1 propertyAdvisorRepo1;
 
     public List<PropertyAdvisor> getAllPropertyAdvisor(){
 
-        return propertyAdvisorRepo.getAllPropertyAdvisor();
+        return propertyAdvisorRepo1.getAllProp();
     }
 }
