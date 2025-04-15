@@ -21,6 +21,7 @@ public class PropertyAdvisorRepo1 {
             propertyAdvisor.setPropertyId(rs.getInt("id"));
             propertyAdvisor.setPlaceName(rs.getString("name"));
             propertyAdvisor.setDimensions(rs.getInt("dimensions"));
+            System.out.println("this is the repo");
 
 
             return propertyAdvisor;
