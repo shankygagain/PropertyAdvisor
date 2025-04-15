@@ -9,9 +9,11 @@ import java.util.List;
 @Repository
 public class PropertyAdvisorRepo1 {
 
-
     @Autowired
     private JdbcTemplate jdbcTemplate;
+
+    @Autowired
+    private DataSourceConfig dataSourceConfig;
 
     public List<PropertyAdvisor> getAllProp(){
 
