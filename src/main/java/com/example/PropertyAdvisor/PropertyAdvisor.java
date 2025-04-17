@@ -30,4 +30,5 @@ public class PropertyAdvisor {
     public void setPropertyId(int propertyId) {
         this.propertyId = propertyId;
     }
+    System.out.println("hellllo");
 }
