@@ -8,28 +8,28 @@ import java.util.Map;
 
 @Configuration
 @PropertySource("classpath:custom-datasource.properties")
-@ConfigurationProperties(prefix = "spring")
+@ConfigurationProperties(prefix = "spring.datasource")
 public class DataSourceConfig {
 
-    /*private String username;
+    private String username;
 
     private String password;
 
     private String url;
 
     private String driverClassName;
-*/
-    private Map<String, String> datasource;
 
-    public Map<String, String> getDatasource() {
-        return datasource;
-    }
+//    private Map<String, String> datasource;
+//
+//    public Map<String, String> getDatasource() {
+//        return datasource;
+//    }
+//
+//    public void setDatasource(Map<String, String> datasource) {
+//        this.datasource = datasource;
+//    }
 
-    public void setDatasource(Map<String, String> datasource) {
-        this.datasource = datasource;
-    }
-
-    /*public String getUsername() {
+    public String getUsername() {
         return username;
     }
 
@@ -59,5 +59,5 @@ public class DataSourceConfig {
 
     public void setDriverClassName(String driverClassName) {
         this.driverClassName = driverClassName;
-    }*/
+    }
 }
